@@ -1,4 +1,4 @@
-/* reset */
+/*=========== reset ==========*/
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,17 @@ li {
   content: "";
   clear: both;
 }
-/* header style */
+/* loader style */
+/* .background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: url(../img/vX.gif) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.1;
+} */
+/* ========header style ==========*/
 .main_header {
   width: 100%;
   height: 70px;
@@ -40,6 +50,7 @@ li {
   box-sizing: border-box;
   border-right: 2px solid black;
   padding: 0 10px;
+  overflow: hidden;
 }
 .main_header .item_right {
   width: 50%;
@@ -145,4 +156,49 @@ li {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 31px;
+}
+/*========= section style ==========*/
+.blur_wrap {
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease-out;
+  z-index: 11;
+}
+.blur_wrap.active {
+  opacity: 0;
+  visibility: hidden;
+}
+.wrap {
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 90px 0;
+  margin: auto;
+  /* background: #eee; */
+}
+.wrap .container {
+  width: 100%;
+  height: auto;
+  /* background: #ddd; */
+}
+.wrap .container .pf_item {
+  width: 25%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  /* background: #ccc; */
+}
+.wrap .container .pf_item .pf_item_con {
+  width: 100%;
+  height: 100%;
+  /* background: #bbb; */
+}
+.wrap .container .pf_item .pf_item_con img {
+  width: 100%;
 }
