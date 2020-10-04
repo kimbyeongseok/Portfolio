@@ -11,6 +11,22 @@ $(document).ready(function () {
     $(".sub_header").removeClass("active");
     $(".side_nav_bars").removeClass("open");
   });
+  $(".item_left h1").click(function () {
+    $(".sub_header").removeClass("active");
+    $(".side_nav_bars").removeClass("open");
+    let valuePos = $(this).find("a").attr("value");
+    let offsetTop = $("." + valuePos).offset().top;
+    //alert(valuePos);
+    $("html,body").animate({ scrollTop: offsetTop }, 500);
+  });
+  $(".item_right h1").click(function () {
+    $(".sub_header").removeClass("active");
+    $(".side_nav_bars").removeClass("open");
+    let valuePos = $(this).find("a").attr("value");
+    let offsetTop = $("." + valuePos).offset().top;
+    //alert(valuePos);
+    $("html,body").animate({ scrollTop: offsetTop }, 500);
+  });
   //   function wrap_padding() {
   //     var header_height = $(".main_header").height() + 30;
   //     $(".wrap").css({ paddingTop: header_height });

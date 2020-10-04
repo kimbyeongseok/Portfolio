@@ -3,7 +3,7 @@
     height: 55px;
   }
   .main_header h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .sub_header {
     height: 55px;
@@ -12,10 +12,13 @@
     top: 55px;
   }
   .sub_header h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .side_nav_bars {
     margin-top: 8px;
+  }
+  .wrap .container.contact .bg_txt {
+    font-size: 300px;
   }
 }
 @media screen and (max-width: 910px) {
@@ -40,6 +43,32 @@
   .sub_header .item_right {
     width: 40%;
     padding: 12px 10px;
+  }
+  /* section style */
+  .wrap .container.pf .pf_item {
+    width: 50%;
+    height: 400px;
+  }
+  .wrap .container.pf .bg_txt {
+    font-size: 250px;
+    margin-top: -60px;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* section style */
+  .wrap .about .about_item .about_content_2 {
+    width: 80%;
+  }
+  .wrap .container.pf .pf_item {
+    padding: 10px;
+    height: 300px;
+  }
+  .wrap .container.pf .bg_txt {
+    font-size: 200px;
+    margin-top: -50px;
+  }
+  .wrap .container.contact .bg_txt {
+    font-size: 200px;
   }
 }
 @media screen and (max-width: 530px) {
@@ -86,6 +115,24 @@
   .side_nav_bars.open span:nth-child(3) {
     top: 21px;
   }
+  /* section style */
+  .wrap .about .about_item .about_content_3 p {
+    font-size: 40px;
+  }
+  .wrap .container.pf .pf_item {
+    padding: 10px;
+    height: 250px;
+  }
+  .wrap .container.pf .pf_item .pf_item_con p.title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .wrap .container.pf .pf_item .pf_item_con p.sub {
+    font-size: 12px;
+  }
+  .wrap .container.contact div {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 320px) {
   .sub_header .item_left {
@@ -96,5 +143,9 @@
   }
   .main_header .item_right {
     padding: 0 7px;
+  }
+  /* section style */
+  .wrap .about .about_item .about_content_3 p {
+    font-size: 30px;
   }
 }
