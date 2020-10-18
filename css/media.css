@@ -1,3 +1,8 @@
+@media screen and (min-width: 2000px) {
+  .wrap .container.pf .pf_item {
+    width: 25%;
+  }
+}
 @media screen and (max-width: 1180px) {
   .main_header {
     height: 55px;
@@ -35,6 +40,10 @@
   .sub_header h1 {
     font-size: 30px;
   }
+  .sub_header h1.lan {
+    font-size: 18px;
+    margin-right: 5px;
+  }
   .sub_header .item_left {
     width: 60%;
     padding: 12px 10px;
@@ -44,6 +53,7 @@
     width: 40%;
     padding: 12px 10px;
   }
+
   /* section style */
   .wrap .container.pf .pf_item {
     width: 50%;
@@ -70,12 +80,30 @@
   .wrap .container.contact .bg_txt {
     font-size: 200px;
   }
+  .txt_br {
+    display: block;
+  }
+  .wrap .container.pf .bg_txt.cw {
+    font-size: 150px;
+    margin-top: 0px;
+  }
+  .wrap .container.pf .bg_txt.aw {
+    font-size: 150px;
+    margin-top: 0px;
+  }
+  .wrap .container.pf .bg_txt.aw.kr {
+    margin-top: -50px;
+  }
+  .wrap .container.pf .pf_item .pf_item_con p.title.bk {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 530px) {
   .main_header {
     height: 40px;
   }
   .main_header h1 {
+    margin-top: -3px;
     font-size: 30px;
   }
   .main_header .item_left {
@@ -86,6 +114,9 @@
   }
   .sub_header h1 {
     font-size: 20px;
+  }
+  .sub_header h1.lan {
+    font-size: 15px;
   }
   .sub_header.active {
     top: 40px;
@@ -127,11 +158,39 @@
     font-size: 20px;
     font-weight: 600;
   }
+  .wrap .container.pf .pf_item .pf_item_con p.title.bk {
+    font-size: 15px;
+  }
   .wrap .container.pf .pf_item .pf_item_con p.sub {
     font-size: 12px;
   }
   .wrap .container.contact div {
     width: 80%;
+  }
+  .pdf_view {
+    width: 95%;
+    left: 2.5%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .sub_header {
+    height: 55px;
+    margin-top: -30px;
+  }
+  .sub_header.active {
+    margin-top: 0px;
+  }
+  .wrap .container.pf .pf_item .pf_item_con p.title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .sub_header {
+    height: 62px;
+    margin-top: -30px;
+  }
+  .wrap .container.pf .pf_item .pf_item_con img {
+    height: 70%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -141,6 +200,7 @@
   .sub_header .item_right {
     width: 30%;
   }
+
   .main_header .item_right {
     padding: 0 7px;
   }

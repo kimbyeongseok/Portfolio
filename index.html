@@ -4,67 +4,158 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/media.css?v=<?php echo time(); ?>" />
   </head>
   <body>
-    <div class="background"></div>
-    <header>
-      <div class="main_header clear" id="main_header">
-        <div class="item_left">
-          <a href="#">
-            <h1 id="home">KIM BYEONG SEOK</h1>
-          </a>
-        </div>
-        <div class="item_right">
-          <h1 id="txt_ani">PORTFOLIO</h1>
-          <div class="side_nav_bars">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="body_wrap">
+      <header>
+        <div class="main_header clear" id="main_header">
+          <div class="item_left">
+            <a href="#">
+              <h1 id="home">KIM BYEONG SEOK</h1>
+            </a>
+          </div>
+          <div class="item_right">
+            <h1 id="txt_ani">PORTFOLIO</h1>
+            <div class="side_nav_bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="sub_header clear">
-        <div class="item_left">
-          <h1><a href="#" value="about">ABOUT</a></h1>
-          <h1><a href="#" value="contact">CONTACT</a></h1>
+        <div class="sub_header clear">
+          <div class="item_left">
+            <h1><a href="#" value="about">ABOUT</a></h1>
+            <h1><a href="#" value="contact">CONTACT</a></h1>
+          </div>
+          <div class="item_right">
+            <h1><a href="#" value="works">WORKS</a></h1>
+            <h1 class="lan"><a href="index.html" value="works">EN</a></h1>
+            <h1 class="lan"><a href="index_kr.html" value="works">KO</a></h1>
+          </div>
         </div>
-        <div class="item_right">
-          <h1><a href="#" value="works">WORKS</a></h1>
-        </div>
-      </div>
-    </header>
-    <section>
-      <div class="wrap" id="wrap">
-        <div class="container about">
-          <div class="about_item">
-            <div class="about_content_1"></div>
-            <div class="about_content_3 clear">
-              <p>Front End Developer</p>
-              <p></p>
-              <p>UI/UX Designer</p>
+      </header>
+      <section>
+        <div class="wrap" id="wrap">
+          <div class="container about">
+            <div class="about_item">
+              <div class="about_content_1"></div>
+              <div class="about_content_3 clear">
+                <p>UI/UX Designer</p>
+                <p></p>
+                <p>Front End Developer</p>
+              </div>
+              <div class="about_content_2">
+                <p>
+                  <strong style="font-size: 20px">Introduction</strong>
+                  <br />
+                  Born 1993, lives and works in Seoul, Korea <br /><strong
+                    >Education</strong
+                  >
+                  <br />2012 - 2019 BA Fine Art, Korea National University of
+                  Arts, Seoul, Korea<br />
+                  <strong class="more_info">more info +</strong>
+                </p>
+              </div>
+              <div class="about_content_4">
+                <div class="side_nav_bars">
+                  <span></span>
+                  <span></span>
+                </div>
+                <p>
+                  <strong>ByeongSeok Kim</strong>
+                  <br />
+                  <br />
+                  Migeum-ro 111, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic
+                  of Korea 13582
+                  <br />
+                  +82.10.9630.1106
+                  <br />
+                  tmxlraos@gmail.com
+                  <br />
+                  <br />
+                  Born April 4, 1993, Seoul, Republic of Korea
+                  <br />
+                  Lives and Works in Seoul, Republic of Korea
+                  <br />
+                  <br />
+                  <strong>Education</strong>
+                  <br />
+                  <br />
+                  &#186;2012 - 2019 BA Fine Art, Korea National University of
+                  Arts, Seoul, Korea
+                  <br />&#186;2020 ~ Participate in 'Front End Developer'
+                  program
+                  <br />
+                  <br />
+                  <strong>Selected Group Exhibition</strong>
+                  <br />
+                  <br />
+                  2018
+                  <br />
+                  &#186;Perform "DATAPACK", lmin Museum of Art, Seoul, Korea
+                  <br />
+                  &#186;Radio Angrezi 'Live stream', Hochschule für Künste
+                  Bremen, Germany
+                  <br />
+                  &#186;Soshoroom : the video showroom, Seoul, Korea
+                  <br />
+                  &#186;RO(o/u)T(e) is LUMBER is MYSTERY (미스테리 루트 위
+                  통나무), Seoul, Korea
+                  <br />
+                  <br />
+                  <strong>Work experience</strong>
+                  <br />
+                  <br />
+                  &#186;2018-2019 Participated as a community artist in Chanshin
+                  communication workshop which is a public art project space for
+                  urban Regeneration in Jongno, Seoul, Korea
+                  <br />
+                  &#186;2019-2020 Worked as a graphic designer in BK innovation
+                  corporation, designed identity systems for the company and
+                  brand
+                </p>
+              </div>
             </div>
-            <div class="about_content_2">
-              <p>
-                <strong style="font-size: 20px">Introduction</strong>
-                <br />
-                Born 1993, lives and works in Seoul, Korea <br /><strong
-                  >Education</strong
+          </div>
+          <div class="container pf works clear">
+            <p class="bg_txt">WEB</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/mobel.png" alt="" />
+                <p class="title">Möbel</p>
+                <p class="sub">html, css, javascript</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://github.com/kimbyeongseok/UI-UX-Design-project"
+                  target="_blank"
+                  >Github</a
                 >
-                <br />2012 - 2019 BA Fine Art, Korea National University of
-                Arts, Seoul, Korea<br />
-              </p>
+                <a
+                  href="https://docs.google.com/presentation/d/1Xb-gMOdG_P5y80rzyk3xzbioeBPe-8malwXt8Pefv2U/edit?usp=sharing"
+                  target="_blank"
+                  >Docs</a
+                >
+                <a
+                  href="http://tmxlraos.dothome.co.kr/mobel/index.html"
+                  target="_blank"
+                  >Site</a
+                >
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="container pf works clear">
-          <p class="bg_txt">WORKS</p>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/eflux.png" alt="" />
-              <p class="title">e-flux</p>
-              <p class="sub">html, css, javascript, jquery, php</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/eflux.png" alt="" />
+                <p class="title">e-flux</p>
+                <p class="sub">html, css, javascript, jquery, php</p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/renewal-project_e-flux"
@@ -78,12 +169,12 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/spacex.png" alt="" />
-              <p class="title">Space X</p>
-              <p class="sub">html, css, javascript, jquery</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/spacex.png" alt="" />
+                <p class="title">Space X</p>
+                <p class="sub">html, css, javascript, jquery</p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/renewal-project_spaceX"
@@ -97,12 +188,12 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/myschedule.png" alt="" />
-              <p class="title">My Schedule</p>
-              <p class="sub">html, css, javascript, jquery, php</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/myschedule.png" alt="" />
+                <p class="title">My Schedule</p>
+                <p class="sub">html, css, javascript, jquery, php</p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/my_schedule"
@@ -116,12 +207,12 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/hubble.png" alt="" />
-              <p class="title">Hubble</p>
-              <p class="sub">html, css, javascript, jquery, api</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/hubble.png" alt="" />
+                <p class="title">Hubble</p>
+                <p class="sub">html, css, javascript, jquery, api</p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/api-practice-_hubble"
@@ -135,12 +226,12 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/onetel.png" alt="" />
-              <p class="title">Onetel</p>
-              <p class="sub">html, css, javascript, jquery, php</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/onetel.png" alt="" />
+                <p class="title">Onetel</p>
+                <p class="sub">html, css, javascript, jquery, php</p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/php_practice_onetel"
@@ -154,12 +245,14 @@
                 >
               </div>
             </div>
-          </div>
-          <div class="pf_item">
-            <div class="pf_item_con">
-              <img src="img/pf_img/reveal.png" alt="" />
-              <p class="title">Reveal</p>
-              <p class="sub">html, css, javascript, jquery, bootstrap-plugin</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img src="img/pf_img/reveal.png" alt="" />
+                <p class="title">Reveal</p>
+                <p class="sub">
+                  html, css, javascript, jquery, bootstrap-plugin
+                </p>
+              </div>
               <div class="cover">
                 <a
                   href="https://github.com/kimbyeongseok/bootstrap-plugin_practice"
@@ -174,20 +267,145 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="container contact">
-          <p class="bg_txt">CONTACT</p>
-          <div>
-            <a href="mailto: tmxlraos@gmail.com" target="_blank"
-              ><p>tmxlraos@gmail.com</p></a
-            >
-            <p>+82 010 9630 1106</p>
+          <div class="container pf works app clear">
+            <p class="bg_txt">APP</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img class="" src="img/pf_img/Asset 1@2x.png" alt="" />
+                <p class="title">Furnitur of Möbel</p>
+                <p class="sub">Flutter</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://github.com/kimbyeongseok/Flutter_Furnitur-App"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img
+                  class="flutter_img"
+                  src="img/pf_img/flutter_project.png"
+                  alt=""
+                />
+                <p class="title">서울 지하철 도착정보</p>
+                <p class="sub">Flutter</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://github.com/kimbyeongseok/Flutter-Subway-Arrival"
+                  target="_blank"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container pf works cw clear">
+            <p class="bg_txt cw">Commercial Works</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img class="flutter_img" src="img/pf_img/pk_1.jpg" alt="" />
+                <p class="title">Pinkbox</p>
+                <p class="sub">Promotional video</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://www.youtube.com/watch?v=NVDviGnSwc4"
+                  target="_blank"
+                  >Youtube</i
+                ></a>
+              </div>
+            </div>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img class="flutter_img" src="img/pf_img/bk.png" alt="" />
+                <p class="title bk">BK Inovation & Pinkbox</p>
+                <p class="sub">BI / CI</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://pinkboxshop.com/intro/adult_im.html"
+                  target="_blank"
+                  >Site</a
+                >
+                <a class="pdf_open bk">PDF</a>
+              </div>
+              <div class="pdf_view bk">
+                <div class="side_nav_bars bk">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <img src="img/pf_img/bk_1@2x.png" alt="" />
+                <img src="img/pf_img/bk_2@2x.png" alt="" />
+                <img src="img/pf_img/bk_3@2x.png" alt="" />
+              </div>
+            </div>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <div class="img">
+                  <img
+                    class="hihaba_img"
+                    src="img/pf_img/hihaba_img.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <p class="title">HIHABA Project</p>
+                <p class="sub">Design & Artdirecting</p>
+              </div>
+              <div class="cover">
+                <a
+                  href="https://www.instagram.com/hihaba_/?hl=en"
+                  target="_blank"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+                <a class="pdf_open hb">Identity</a>
+              </div>
+              <div class="pdf_view hb">
+                <div class="side_nav_bars hb">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <img src="img/pf_img/hihaba_1@2x.png" alt="" />
+                <img src="img/pf_img/hihaba_2@2x.png" alt="" />
+                <img src="img/pf_img/hihaba_3@2x.png" alt="" />
+                <img src="img/pf_img/hihaba_4@2x.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="container pf works aw clear">
+            <p class="bg_txt aw">ARTWORKS</p>
+            <div class="pf_item">
+              <div class="pf_item_con">
+                <img class="" src="img/pf_img/artworks.png" alt="" />
+                <p class="title">Fine Art Works</p>
+                <p class="sub">Selected works</p>
+              </div>
+              <div class="cover">
+                <a href="https://kimbyeongseok.com/work" target="_blank"
+                  >Site</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="container contact">
+            <p class="bg_txt">CONTACT</p>
+            <div>
+              <a href="mailto: tmxlraos@gmail.com" target="_blank"
+                ><p>tmxlraos@gmail.com</p></a
+              >
+              <p>+82 010 9630 1106</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="blur_wrap"></div>
-    </section>
+      </section>
+    </div>
+    <div class="blur_wrap"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js?v=<?php echo time(); ?>"></script>
   </body>
 </html>

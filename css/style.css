@@ -30,7 +30,20 @@ a {
   z-index: -1;
   opacity: 0.1;
 } */
+/* body {
+} */
+/* .body_wrap {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 1800px;
+} */
 /* ========header style ==========*/
+/* header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+} */
 .main_header {
   width: 100%;
   height: 70px;
@@ -73,6 +86,7 @@ a {
   height: 70px;
   position: fixed;
   top: 0;
+  left: 0;
   transition: all 0.3s ease-out;
   background: #fff;
   z-index: 9;
@@ -100,6 +114,9 @@ a {
   font-size: 58px;
   margin-right: 20px;
   cursor: pointer;
+}
+.sub_header h1.lan {
+  float: right;
 }
 /* side nav bar style */
 .side_nav_bars {
@@ -168,6 +185,7 @@ a {
   width: 100%;
   height: 100vh;
   background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: fixed;
   left: 0;
@@ -227,6 +245,9 @@ section {
   text-shadow: 0 0 1px black;
   color: #fff;
 }
+.txt_br {
+  display: none;
+}
 .wrap .about .about_item .about_content_3 p:nth-child(1) {
   position: absolute;
   left: 0;
@@ -266,7 +287,7 @@ section {
   );
 }
 .wrap .about .about_item .about_content_2 {
-  width: auto;
+  width: 45%;
   height: auto;
   box-sizing: border-box;
   border: 1.5px solid black;
@@ -277,6 +298,72 @@ section {
   padding: 20px;
   line-height: 1.5;
 }
+.more_info {
+  cursor: pointer;
+}
+.about_content_4 {
+  width: 80%;
+  height: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid black;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  z-index: 10;
+  top: 10%;
+  left: 10%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.about_content_4 p {
+  line-height: 1.3;
+}
+.about_content_4.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  padding: 20px;
+}
+/* side nav bar style */
+.about_content_4 .side_nav_bars {
+  position: relative;
+  color: black;
+  transition: top 0.3s;
+  width: 45px;
+  height: 50px;
+  cursor: pointer;
+  float: right;
+  margin-top: 0px;
+}
+.about_content_4 .side_nav_bars span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  left: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.about_content_4 .side_nav_bars span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+.about_content_4 .side_nav_bars span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31px;
+}
+
 /* ========contact container style =========*/
 .wrap .container.contact {
   height: 100vh;
@@ -290,6 +377,23 @@ section {
   position: relative;
   /* overflow: hidden; */
 }
+.wrap .container.pf.app {
+  background: url(../img/bg_img/bg_3.gif);
+  background-size: cover;
+}
+.wrap .container.pf.artwork {
+  background: url(../img/bg-2.gif);
+}
+.wrap .container.pf.cw {
+  padding: 160px 0 90px;
+  background: url(../img/bg_img/bg_7.gif);
+  background-size: cover;
+}
+.wrap .container.pf.aw {
+  padding: 80px 0 90px;
+  background: url(../img/bg_img/bg_8.gif);
+  background-size: cover;
+}
 .wrap .container.pf .bg_txt {
   font-size: 300px;
   color: #fff;
@@ -299,6 +403,16 @@ section {
   top: 0;
   margin-top: -100px;
   font-weight: 900;
+}
+.wrap .container.pf .bg_txt.cw {
+  font-size: 200px;
+  line-height: 0.6;
+  margin-top: -40px;
+}
+.wrap .container.pf .bg_txt.aw {
+  font-size: 220px;
+  line-height: 0.6;
+  margin-top: -40px;
 }
 .wrap .container.pf .pf_item {
   width: 33.33%;
@@ -314,9 +428,25 @@ section {
   height: 100%;
   /* background: #bbb; */
   overflow: hidden;
+  position: relative;
 }
 .wrap .container.pf .pf_item .pf_item_con img {
   height: 80%;
+}
+.wrap .container.pf .pf_item .pf_item_con .img {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.wrap .container.pf .pf_item .pf_item_con .hihaba_img {
+  width: 100%;
+  height: auto;
+  margin-top: 60%;
+  transform: translateY(-50%);
+}
+.wrap .container.pf .pf_item .pf_item_con img.flutter_img {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .wrap .container.pf .pf_item .pf_item_con p.title {
   font-size: 30px;
@@ -325,7 +455,7 @@ section {
 .wrap .container.pf .pf_item .pf_item_con p.sub {
   font-size: 15px;
 }
-.wrap .container.pf .pf_item .pf_item_con .cover {
+.wrap .container.pf .pf_item .cover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -333,6 +463,7 @@ section {
   left: 0;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   padding-top: 30%;
   text-align: center;
@@ -340,7 +471,7 @@ section {
   transition: all 0.3s ease-out;
   border-radius: 5%;
 }
-.wrap .container.pf .pf_item .pf_item_con:hover .cover {
+.wrap .container.pf .pf_item:hover .cover {
   opacity: 1;
 }
 .cover a {
@@ -353,6 +484,72 @@ section {
   background: #fff;
   border: 1px solid black;
   margin: 0 20px;
+}
+/* *==PDF view style==* */
+.pdf_open {
+  cursor: pointer;
+}
+.pdf_view.active {
+  opacity: 1;
+  visibility: visible;
+}
+.pdf_view {
+  position: fixed;
+  height: 90%;
+  width: 70%;
+  overflow: scroll;
+  left: 5%;
+  top: 5%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: #fff;
+  z-index: 100;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.pdf_view img {
+  width: 100%;
+}
+.pdf_view .side_nav_bars {
+  position: relative;
+  color: black;
+  transition: top 0.3s;
+  width: 45px;
+  height: 50px;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.pdf_view .side_nav_bars span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  left: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.pdf_view .side_nav_bars span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0px;
+}
+.pdf_view .side_nav_bars span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 31px;
+}
+.pdf_view .side_nav_bars span:nth-child(3) {
+  display: none;
 }
 /* ========contact container style =========*/
 .wrap .container.contact {

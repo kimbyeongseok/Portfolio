@@ -27,6 +27,24 @@ $(document).ready(function () {
     //alert(valuePos);
     $("html,body").animate({ scrollTop: offsetTop }, 500);
   });
+  $(".more_info").click(function () {
+    $(".about_content_4").addClass("active");
+  });
+  $(".about_content_4 .side_nav_bars").click(function () {
+    $(".about_content_4").removeClass("active");
+  });
+  $(".pdf_view .side_nav_bars.bk").click(function () {
+    $(".pdf_view.bk").removeClass("active");
+  });
+  $(".pdf_open.bk").click(function () {
+    $(".pdf_view.bk").addClass("active");
+  });
+  $(".pdf_view .side_nav_bars.hb").click(function () {
+    $(".pdf_view.hb").removeClass("active");
+  });
+  $(".pdf_open.hb").click(function () {
+    $(".pdf_view.hb").addClass("active");
+  });
   //   function wrap_padding() {
   //     var header_height = $(".main_header").height() + 30;
   //     $(".wrap").css({ paddingTop: header_height });
